@@ -114,7 +114,7 @@ export default class GameBoard extends React.Component {
             } else {
                 axios.request({
                     method: 'POST',
-                    url: 'http://localhost:4000/games/' + this.props.room,
+                    url: 'http://pusher-chess-git-bc-chess.apps.us-west-1.starter.openshift-online.com/games/' + this.props.room,
                     data: {
                         player: this.props.user.id,
                         fromRow: this.state.activeCell.y,
@@ -139,7 +139,7 @@ export default class GameBoard extends React.Component {
 
     _refreshGame() {
         axios.request({
-            url: 'http://localhost:4000/games/' + this.props.room
+            url: 'http://pusher-chess-git-bc-chess.apps.us-west-1.starter.openshift-online.com/games/' + this.props.room
         })
         .then((response) => {
             this.setState({
