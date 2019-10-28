@@ -5,10 +5,10 @@ echo "Custom assembling"
 
 echo "---> Installing application source"
 cp -Rfp /tmp/src/. ./
-npm config set registry http://registry.npmjs.org/
-npm config set loglevel warn
-npm install
-yarn install
+#npm config set registry http://registry.npmjs.org/
+#npm config set loglevel warn
+#npm install
+#yarn install
 npx yarn install 
 
 fix-permissions /opt/app-root
