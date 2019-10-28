@@ -4,10 +4,10 @@ var Pusher = require('pusher');
 var chatkit = require('./chatkit');
 
 var pusher = new Pusher({
-  appId: 'PUSHER_APP_ID',
-  key: 'PUSHER_APP_KEY',
-  secret: 'PUSHER_APP_SECRET',
-  cluster: 'PUSHER_CLUSTER',
+ appId: '888619',
+  key: '11e2127c5a49f10ef1f6',
+  secret: '96e306fc08f00987ee54',
+  cluster: 'ap2',
   encrypted: true
 });
 
