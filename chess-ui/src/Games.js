@@ -14,7 +14,7 @@ export default class Games extends React.Component {
     constructor(props) {
         super(props);
         this.chatManager = new ChatManager({
-            instanceLocator: 'CHATKIT_INSTANCE_LOCATOR',
+            instanceLocator: 'v1:us1:539de3eb-f409-40f3-99f2-ab76098c9504',
             tokenProvider: new TokenProvider({
                 url: "http://localhost:4000/auth",
             }),
