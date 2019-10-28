@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Grid, List } from 'semantic-ui-react';
 import Pusher from 'pusher-js';
 
-var pusher = new Pusher('PUSHER_APP_KEY', {
-    cluster: 'PUSHER_CLUSTER',
+var pusher = new Pusher('11e2127c5a49f10ef1f6', {
+    cluster: 'ap2',
     forceTLS: true
   });
 
