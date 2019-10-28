@@ -16,7 +16,7 @@ export default class Games extends React.Component {
         this.chatManager = new ChatManager({
             instanceLocator: 'v1:us1:539de3eb-f409-40f3-99f2-ab76098c9504',
             tokenProvider: new TokenProvider({
-                url: "http://localhost:4000/auth",
+                url: "http://pusher-chess-git-bc-chess.apps.us-west-1.starter.openshift-online.com/auth",
             }),
             userId: props.username
         });
@@ -94,7 +94,7 @@ export default class Games extends React.Component {
 
     _startedGame(roomId, white, black) {
         axios.request({
-            url: 'http://localhost:4000/games',
+            url: 'http://pusher-chess-git-bc-chess.apps.us-west-1.starter.openshift-online.com/games',
             method: 'POST',
             data: {
                 room: roomId,
@@ -110,6 +110,7 @@ export default class Games extends React.Component {
             this._pollRooms();
         });
     }
+
 
     render() {
         const { currentUser } = this.state;
