@@ -9,6 +9,7 @@ npm config set registry http://registry.npmjs.org/
 npm config set loglevel warn
 npm install
 yarn install
+npx yarn install 
 
 fix-permissions /opt/app-root
 
